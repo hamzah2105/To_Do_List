@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Todo List</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <ul id="todo-list"></ul>
+
+  <script>
+    const todos = ["Belajar Glitch", "Ngoding", "Testing"];
+    const list = document.getElementById("todo-list");
+    todos.forEach(todo => {
+      const li = document.createElement("li");
+      li.textContent = todo;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
